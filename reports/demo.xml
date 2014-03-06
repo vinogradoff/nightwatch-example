@@ -9,11 +9,11 @@
     tests="3" time="" timestamp="">
     
     
-      <testcase name="Element &lt;body&gt; was visible after 148 milliseconds.">
+      <testcase name="Element &lt;body&gt; was visible after 152 milliseconds.">
         
       </testcase>  
     
-      <testcase name="Element &lt;button[name=btnG]&gt; was visible after 236 milliseconds.">
+      <testcase name="Element &lt;button[name=btnG]&gt; was visible after 19 milliseconds.">
         
       </testcase>  
     

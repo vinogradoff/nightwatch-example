@@ -1,0 +1,44 @@
+08.03.2014 15:59:40 org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+15:59:40.108 INFO - Java: Apple Inc. 20.65-b04-462
+15:59:40.109 INFO - OS: Mac OS X 10.9.2 x86_64
+15:59:40.116 INFO - v2.40.0, with Core v2.40.0. Built from revision fbe29a9
+15:59:40.172 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+15:59:40.200 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+15:59:40.201 INFO - Version Jetty/5.1.x
+15:59:40.201 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+15:59:40.202 INFO - Started HttpContext[/selenium-server,/selenium-server]
+15:59:40.202 INFO - Started HttpContext[/,/]
+15:59:40.232 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@17fe1feb
+15:59:40.232 INFO - Started HttpContext[/wd,/wd]
+15:59:40.237 INFO - Started SocketListener on 0.0.0.0:4444
+15:59:40.237 INFO - Started org.openqa.jetty.jetty.Server@35c0e45a
+15:59:40.430 INFO - Executing: [new session: Capabilities [{platform=ANY, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox}]] at URL: /session)
+15:59:40.440 INFO - Creating a new session for Capabilities [{platform=ANY, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox}]
+15:59:42.659 INFO - Done: /session
+15:59:42.673 INFO - Executing: [get: http://www.google.com] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/url)
+15:59:47.878 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/url
+15:59:47.882 INFO - Executing: [take screenshot] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/screenshot)
+15:59:48.297 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/screenshot
+15:59:48.328 INFO - Executing: [find element: By.selector: body] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/element)
+15:59:48.365 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/element
+15:59:48.368 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (e363675b-99d6-1f44-ae5e-98f385af4711)] -> css selector: body]] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/element/0/displayed)
+15:59:48.375 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/element/0/displayed
+15:59:48.378 INFO - Executing: [find element: By.selector: input[type=text]] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/element)
+15:59:48.385 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/element
+15:59:48.408 INFO - Executing: [send keys: 1 [[FirefoxDriver: firefox on MAC (e363675b-99d6-1f44-ae5e-98f385af4711)] -> css selector: input[type=text]], [n, i, g, h, t, w, a, t, c, h]] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/element/1/value)
+15:59:48.473 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/element/1/value
+15:59:48.477 INFO - Executing: [find element: By.selector: button[name=btnG]] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/element)
+15:59:48.694 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/element
+15:59:48.696 INFO - Executing: [is displayed: 2 [[FirefoxDriver: firefox on MAC (e363675b-99d6-1f44-ae5e-98f385af4711)] -> css selector: button[name=btnG]]] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/element/2/displayed)
+15:59:48.705 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/element/2/displayed
+15:59:48.707 INFO - Executing: [find element: By.selector: button[name=btnG]] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/element)
+15:59:48.714 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/element
+15:59:48.717 INFO - Executing: [click: 2 [[FirefoxDriver: firefox on MAC (e363675b-99d6-1f44-ae5e-98f385af4711)] -> css selector: button[name=btnG]]] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/element/2/click)
+15:59:48.780 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/element/2/click
+15:59:49.784 INFO - Executing: [find element: By.selector: #main] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/element)
+15:59:49.789 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/element
+15:59:49.792 INFO - Executing: [get text: 3 [[FirefoxDriver: firefox on MAC (e363675b-99d6-1f44-ae5e-98f385af4711)] -> css selector: #main]] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26/element/3/text)
+15:59:50.913 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26/element/3/text
+15:59:50.917 INFO - Executing: [delete session: 3ddde30c-ea16-4272-9a60-788314775f26] at URL: /session/3ddde30c-ea16-4272-9a60-788314775f26)
+15:59:51.000 INFO - Done: /session/3ddde30c-ea16-4272-9a60-788314775f26

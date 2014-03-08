@@ -1,7 +1,11 @@
+ 	function scr(){
+     	this.saveScreenshot("11.jpg");
+	};
 module.exports = {
   "Demo test Google" : function (browser) {
+
     browser
-      .url("http://www.google.com")
+      .url("http://www.google.com", scr)
       .waitForElementVisible('body', 1000)
       .setValue('input[type=text]', 'nightwatch')
       .waitForElementVisible('button[name=btnG]', 1000)

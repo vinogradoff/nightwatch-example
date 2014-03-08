@@ -1,3 +1,6 @@
+function scr(browser){
+   browser.saveScreenshot("1.jpg");
+}
 module.exports = {
   "Opt-in for ebay 3.0" : function (browser) {
     browser
@@ -8,7 +11,7 @@ module.exports = {
       .url("http://www.ebay.de")
       .waitForElementVisible('body', 1000)
       .assert.containsText('#gh-ug', 'Einloggen')
-      .click('#gh-ug a')
+      .click('#gh-ug a',scr)
       .waitForElementVisible('body', 1000)
       .assert.containsText('#mainCnt div div h2', 'Einloggen')
       .setValue('#userid', '2014detestu')

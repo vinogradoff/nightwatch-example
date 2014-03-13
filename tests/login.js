@@ -1,7 +1,7 @@
 function _s(){
-  now=new Date();
-  folder=""+now.getFullYear()+(now.getMonth()+1)+now.getDate();
-  filename=""+now.getHours()+now.getMinutes()+now.getSeconds();
+  var moment = require('moment');
+  folder=moment().format('YYYYDDMM'); 
+  filename=moment().format('HHmmssS');
   this.saveScreenshot("screenshots/"+folder+"-"+filename+".png");
 };
 module.exports = {

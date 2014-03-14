@@ -42,6 +42,15 @@ module.exports = {
     browser
       .verify.cssClassPresent('#top div ul li:nth-child(2)','today')
       .end();
+  },
+  "Find collection" : function (browser) {
+  },
+  "Add item to new collection" : function (browser) {
+  },
+  "Show collection page" : function (browser) {
+  },
+  "Delete collection" : function (browser) {
+  },
+  "Logout" : function (browser) {
   }
-  
 };

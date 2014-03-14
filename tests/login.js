@@ -12,10 +12,10 @@ function _s(){
 };
 
 module.exports = {
-  "Opt-in for ebay 3.0" : function (browser) {
+  /*"Opt-in for ebay 3.0" : function (browser) {
     browser
       .url('http://cgi1.ebay.de/ws/eBayISAPI.dll?SetGuidforExpt&parm=AQABAAAAMJlpPqZCuMUmHrsVN4FqdGNYnC-BZVRCj0cmRmGSu2AQNj7CMgVANpnSie5rtZx77w**',_s)
-  },
+  },*/
   "Login at eBay.de" : function (browser) {
     try {
       var ebaycredentials = require('./ebaycredentials.json');  
@@ -31,11 +31,11 @@ module.exports = {
       .click('#gh-ug a',_s)
       .waitForElementVisible('body', 1000)
       .assert.containsText('#mainCnt div div h2', 'Einloggen')
-      .setValue('#userid', '2014detestu')
-      .setValue('#pass','EGu-TFw-M7C-W9g')
+      .setValue('#userid', ebaycredentials.username)
+      .setValue('#pass',ebaycredentials.password)
       .click('#sgnBt',_s)
       .waitForElementVisible('body', 1000)
-      .assert.containsText('#gh-ug', '2014detestu')
+      .assert.containsText('#gh-ug', ebaycredentials.username)
       .click('#gh-la',_s)
   },
   "Verify ebay 3.0" : function (browser) {

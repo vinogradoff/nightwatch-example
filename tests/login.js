@@ -25,14 +25,14 @@ module.exports = {
       process.exit();      
     }
     browser
-      .url("http://www.ebay.de",_s)
+      .url(browser.launch_url,_s)
       .waitForElementVisible('body', 1000)
       .assert.containsText('#gh-ug', 'Einloggen')
       .click('#gh-ug a',_s)
       .waitForElementVisible('body', 1000)
       .assert.containsText('#mainCnt div div h2', 'Einloggen')
-      .setValue('#userid', ebaycredentials.username)
-      .setValue('#pass',ebaycredentials.password)
+      .setValue('#userid', browser.options.ebaycredentials.username)
+      .setValue('#pass', browser.options.ebaycredentials.password)
       .click('#sgnBt',_s)
       .waitForElementVisible('body', 1000)
       .assert.containsText('#gh-ug', ebaycredentials.username)

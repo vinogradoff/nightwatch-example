@@ -12,7 +12,8 @@ the start script nightwatch is there for Linux/Mac OS, you might want to create 
 
 starting tests:<br>
 all tests:          ./nightwatch<br>
-some tests:         ./nightwatch -g tests/&lt;test1&gt;,tests/&lt;test2&gt;...<br>
+some tests:         ./nightwatch -t tests/&lt;test1&gt;<br>
+some test group:    ./nightwatch -g tests/&lt;test1&gt;,tests/&lt;test2&gt;...<br>
 all tests, expecpt: ./nightwatch -s tests/&lt;test1&gt;,tests/&lt;test2&gt;...<br>
 
 

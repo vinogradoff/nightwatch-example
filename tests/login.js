@@ -1,22 +1,9 @@
-var mkdirp = require('mkdirp');
-var startMoment = require('moment');
-var folder='login-'+startMoment().format('YYYYDDMM-HHmm');
-mkdirp('screenshots/'+folder, function(err) { 
-    // path was created unless there was error
-});
-
-function _s(){
-  var moment = require('moment');
-  filename=moment().format('HHmmssS');
-  this.saveScreenshot("screenshots/"+folder+"/"+filename+".png");
-};
+//include screenshot _s function
+var fs = require('fs');
+eval(fs.readFileSync('screenshot_helper.js')+'');
 
 module.exports = {
-  /*"Opt-in for ebay 3.0" : function (browser) {
-    browser
-      .url('http://cgi1.ebay.de/ws/eBayISAPI.dll?SetGuidforExpt&parm=AQABAAAAMJlpPqZCuMUmHrsVN4FqdGNYnC-BZVRCj0cmRmGSu2AQNj7CMgVANpnSie5rtZx77w**',_s)
-  },*/
-  "Login at eBay.de" : function (browser) {
+ "Login at eBay.de" : function (browser) {
     try {
       var ebaycredentials = require('./ebaycredentials.json');  
     } catch (err) {

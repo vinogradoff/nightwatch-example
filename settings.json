@@ -26,7 +26,7 @@
       "ie_driver": "",
       "screenshots" : {
         "enabled" : true,
-        "path" : ""
+        "path" : "screenshots"
       },
       "desiredCapabilities": {
         "browserName": "firefox",
@@ -48,7 +48,7 @@
       "ie_driver": "",
       "screenshots" : {
         "enabled" : true,
-        "path" : ""
+        "path" : "screenshots"
       },
       "desiredCapabilities": {
         "browserName": "firefox",
@@ -70,7 +70,7 @@
       "ie_driver": "",
       "screenshots" : {
         "enabled" : true,
-        "path" : ""
+        "path" : "screenshots"
       },
       "desiredCapabilities": {
         "browserName": "firefox",

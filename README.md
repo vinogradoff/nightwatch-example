@@ -11,17 +11,36 @@ you will need to update setting.json then.<br>
 
 the start script nightwatch is there for Linux/Mac OS, you might want to create .bat for Windows.
 
+you may need to set $EBAY_USER and $EBAY_PASSWORD in your environment:
+
+    export EBAY_USER=user123
+    export EBAY_PASSWORD=pwd123
 starting tests:<br>
-all tests:          ./nightwatch<br>
-some tests:         ./nightwatch -t tests/&lt;test1&gt;<br>
-some test group:    ./nightwatch -g tests/&lt;test1&gt;,tests/&lt;test2&gt;...<br>
-all tests, except: 	./nightwatch -s tests/&lt;test1&gt;,tests/&lt;test2&gt;...<br>
+all tests:
+          
+    ./nightwatch
+    
+some tests:
+
+    ./nightwatch -t tests/short;<br>
+some test group:
+
+    ./nightwatch -g tests/demo;test/others...
+all tests, except:
+
+    ./nightwatch -s tests/login;...
 
 changing enviroments:
 
-production:          ./nightwatch <br>
-pre-prod:			 ./nightwatch -e preprod<br>	
-staging:			 ./nightwatch -e staging<br>
+production:          
+
+    ./nightwatch
+pre-prod:
+
+    ./nightwatch -e preprod
+staging:
+
+    ./nightwatch -e staging
 
 Tests included in /tests folder:
 

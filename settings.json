@@ -14,6 +14,32 @@
   "test_settings" : {
     "default" : {
       "launch_url" : "http://www.ebay.de",
+      "ebaycredentials": {
+        "username": "${EBAY_USER}",
+        "password": "${EBAY_PASSWORD}"
+      },
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "firefox_profile": false,
+      "chrome_driver": "",
+      "ie_driver": "",
+      "screenshots" : {
+        "enabled" : true,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+    "preprod" : {
+      "launch_url" : "http://latest.ebay.de",
+      "ebaycredentials": {
+        "username": "${EBAY_USER}",
+        "password": "${EBAY_PASSWORD}"
+      },
       "selenium_port"  : 4444,
       "selenium_host"  : "localhost",
       "silent": true,
